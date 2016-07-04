@@ -9,6 +9,7 @@ class Venue: NSObject {
     var budget: Budget = .Cheap
     var minAge: Int = 0
     var maxAge: Int = 0
+    var eventlist: Set<Event> = []
     
     
    

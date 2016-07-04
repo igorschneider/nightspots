@@ -9,8 +9,12 @@ class UserPreference: NSObject {
     var minAge: Int = 0
     var maxAge: Int = 0
     var budget: Budget = .Cheap
+    var categories: Set<SpotCategory> = []
+    var offerings: Set<Offering> = []
+    var musicGenres: Set<MusicGenre> = []
     
-    enum Category {
+    
+    enum SpotCategory {
     
      case Lounge , Bar, Club ,  SportsBar  , GayBar
         
