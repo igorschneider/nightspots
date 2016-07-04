@@ -1,10 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VG6-nD-j8c">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="tOs-Y3-IrG">
+            <objects>
+                <tableViewController id="efc-D2-aTy" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1hG-Qx-jXd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kdS-IB-OEx">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kdS-IB-OEx" id="s73-l2-Hzb">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="efc-D2-aTy" id="KO8-S8-GiG"/>
+                            <outlet property="delegate" destination="efc-D2-aTy" id="dPT-QE-QYL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="5Rq-Bi-LR0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96Y-M9-fnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="462"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wZ9-CL-Z6y">
+            <objects>
+                <viewController id="VG6-nD-j8c" customClass="ViewController" customModule="Nightspots" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AY5-SO-fq1"/>
+                        <viewControllerLayoutGuide type="bottom" id="1JD-al-2Kj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Mt-97-pEd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ewp-o3-09Y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="VG6-nD-j8c" id="LMI-re-KTF"/>
+                                </connections>
+                            </searchBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uNd-wm-xun">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="108" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r2s-Dg-8BD">
+                                <rect key="frame" x="0.0" y="22" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="150" id="uRI-LX-Yg0" customClass="EventCustomCellTableViewCell" customModule="Nightspots" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uRI-LX-Yg0" id="LVI-iP-lyO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmP-1e-Arp">
+                                                    <rect key="frame" x="-8" y="-7" width="608" height="106"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="photo" destination="CmP-1e-Arp" id="oHR-S8-xnE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="VG6-nD-j8c" id="kpM-cD-yoU"/>
+                                    <outlet property="delegate" destination="VG6-nD-j8c" id="Xsh-3A-rGm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventsTableView" destination="r2s-Dg-8BD" id="maq-C2-oSn"/>
+                        <outlet property="searchDisplayController" destination="0SV-aQ-RhV" id="bin-r7-vAZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xR-Hd-nVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="0SV-aQ-RhV">
+                    <connections>
+                        <outlet property="delegate" destination="VG6-nD-j8c" id="zQf-W1-zXW"/>
+                        <outlet property="searchBar" destination="Ewp-o3-09Y" id="EqU-7C-dmF"/>
+                        <outlet property="searchContentsController" destination="VG6-nD-j8c" id="MhC-My-wMo"/>
+                        <outlet property="searchResultsDataSource" destination="VG6-nD-j8c" id="GOk-Lb-jgi"/>
+                        <outlet property="searchResultsDelegate" destination="VG6-nD-j8c" id="zgz-hl-3lz"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1009" y="1199"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -20,7 +118,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eae jovem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSr-9Q-0iw">
                                 <rect key="frame" x="268" y="247" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -29,6 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="396" y="475"/>
         </scene>
     </scenes>
 </document>
