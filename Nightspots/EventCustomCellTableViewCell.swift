@@ -11,6 +11,10 @@ import UIKit
 class EventCustomCellTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var spotName: UILabel!
+  
+    @IBOutlet weak var spotEventDesc: UILabel!
+    @IBOutlet weak var spotEventDate: UILabel!
     @IBOutlet weak var photo: UIImageView!
    
     override func awakeFromNib() {
@@ -25,3 +29,4 @@ class EventCustomCellTableViewCell: UITableViewCell {
     }
 
 }
+
