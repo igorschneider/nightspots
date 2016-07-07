@@ -11,6 +11,7 @@ import UIKit
 class EventCustomCellTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var spotDistance: UILabel!
     @IBOutlet weak var spotName: UILabel!
   
     @IBOutlet weak var spotEventDesc: UILabel!

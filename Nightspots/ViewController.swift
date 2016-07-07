@@ -1,9 +1,10 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
-    var images = [UIImage(named:"stereo"),UIImage(named:"stereo"),UIImage(named:"stereo"),UIImage(named:"stereo"),UIImage(named:"stereo")]
+    var images = [UIImage(named:"stereo"),UIImage(named:"castle"),UIImage(named:"yellow"),UIImage(named:"aerobar"),UIImage(named:"red")]
     var spotnames = ["Stereo", "Mcgees","Lounge", "Awesome", "Victoria Club" ]
    var spotEventName = ["Hip Hop All Night", "Kesha's concert", "Crazy night", "No idea" , ""]
     
@@ -29,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = self.eventsTableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! EventCustomCellTableViewCell
+        let cell = self.eventsTableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! EventCustomCellTableViewCell
         
         cell.photo.image = images[indexPath.row]
         cell.spotEventDesc.text = spotEventName[indexPath.row]

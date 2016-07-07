@@ -1,6 +1,5 @@
 
-
-import UIKit
+import Foundation
 
 class Admission: NSObject {
     

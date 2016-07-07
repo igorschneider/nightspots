@@ -46,65 +46,111 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ewp-o3-09Y">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="VG6-nD-j8c" id="LMI-re-KTF"/>
-                                </connections>
-                            </searchBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uNd-wm-xun">
                                 <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="71" width="600" height="729"/>
+                                </variation>
                             </scrollView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r2s-Dg-8BD">
-                                <rect key="frame" x="0.0" y="22" width="600" height="556"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="117" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r2s-Dg-8BD">
+                                <rect key="frame" x="0.0" y="73" width="600" height="442"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="99" id="uRI-LX-Yg0" customClass="EventCustomCellTableViewCell" customModule="Nightspots" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="99"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="117" id="uRI-LX-Yg0" customClass="EventCustomCellTableViewCell" customModule="Nightspots" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uRI-LX-Yg0" id="LVI-iP-lyO">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="98"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmP-1e-Arp">
-                                                    <rect key="frame" x="-8" y="-7" width="608" height="106"/>
+                                                    <rect key="frame" x="-8" y="-10" width="608" height="135"/>
+                                                    <variation key="heightClass=regular" fixedFrame="YES">
+                                                        <rect key="frame" x="-8" y="-38" width="608" height="249"/>
+                                                    </variation>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stereo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j5-Mp-MpM">
                                                     <rect key="frame" x="-1" y="35" width="219" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.28223167539267013" green="0.28223167539267013" blue="0.28223167539267013" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <variation key="heightClass=regular" fixedFrame="YES">
+                                                        <rect key="frame" x="23" y="22" width="219" height="38"/>
+                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="244-3a-2mu">
                                                     <rect key="frame" x="6" y="69" width="253" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.34532477094240843" green="0.34532477094240843" blue="0.34532477094240843" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <variation key="heightClass=regular" fixedFrame="YES">
+                                                        <rect key="frame" x="23" y="69" width="253" height="21"/>
+                                                    </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi1-Yg-Xno">
-                                                    <rect key="frame" x="285" y="64" width="115" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEV-TI-iRE">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.38590068717277481" green="0.38590068717277481" blue="0.38590068717277481" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <variation key="heightClass=regular" fixedFrame="YES">
+                                                        <rect key="frame" x="256" y="51" width="140" height="39"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi1-Yg-Xno">
+                                                    <rect key="frame" x="285" y="64" width="115" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.46431200916230364" green="0.46431200916230364" blue="0.46431200916230364" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <variation key="heightClass=regular" fixedFrame="YES">
+                                                        <rect key="frame" x="239" y="31" width="115" height="21"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="OEV-TI-iRE"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular">
+                                                <mask key="subviews">
+                                                    <include reference="OEV-TI-iRE"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="photo" destination="CmP-1e-Arp" id="oHR-S8-xnE"/>
+                                            <outlet property="spotDistance" destination="OEV-TI-iRE" id="08o-QA-62Y"/>
                                             <outlet property="spotEventDate" destination="gi1-Yg-Xno" id="McC-uc-koQ"/>
                                             <outlet property="spotEventDesc" destination="244-3a-2mu" id="v2e-Y5-sp6"/>
                                             <outlet property="spotName" destination="0j5-Mp-MpM" id="Smo-yL-WWq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="77" width="600" height="723"/>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="VG6-nD-j8c" id="kpM-cD-yoU"/>
                                     <outlet property="delegate" destination="VG6-nD-j8c" id="Xsh-3A-rGm"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ewp-o3-09Y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="20" width="376" height="44"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="VG6-nD-j8c" id="LMI-re-KTF"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="eventsTableView" destination="r2s-Dg-8BD" id="maq-C2-oSn"/>
@@ -122,7 +168,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1009" y="1199"/>
+            <point key="canvasLocation" x="1009" y="1182"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

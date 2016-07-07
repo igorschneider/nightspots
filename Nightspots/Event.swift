@@ -1,6 +1,6 @@
 
 
-import UIKit
+import Foundation
 
 class Event: NSObject {
     
@@ -13,8 +13,9 @@ class Event: NSObject {
     var listAdmission: Set<Admission> = []
     var venue: Venue?
     var musicGenre: MusicGenre?
+    var eventImages: Set<String> = []
     var status: Status = .Active
-    
+  
     enum Status{
     
     case Active, Soldout, Passed

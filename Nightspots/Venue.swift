@@ -1,5 +1,5 @@
 
-import UIKit
+import Foundation
 
 class Venue: NSObject {
 
@@ -9,6 +9,8 @@ class Venue: NSObject {
     var budget: Budget = .Cheap
     var minAge: Int = 0
     var maxAge: Int = 0
+    var distance: Double = 0.0
+    var venueImages: Set<String>=[]
     var eventlist: Set<Event> = []
     
     
