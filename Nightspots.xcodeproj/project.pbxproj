@@ -17,6 +17,7 @@
 		520FE8E41D2ACF7700A8AE8E /* Admission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FE8E31D2ACF7700A8AE8E /* Admission.swift */; };
 		520FE8E61D2ADE4D00A8AE8E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FE8E51D2ADE4D00A8AE8E /* Event.swift */; };
 		52C069AC1D2B0F060067585E /* EventCustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C069AB1D2B0F060067585E /* EventCustomCellTableViewCell.swift */; };
+		52C069AE1D3043E30067585E /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C069AD1D3043E30067585E /* FilterViewController.swift */; };
 		EE461EB01CD93E2100CE58C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE461EAF1CD93E2100CE58C8 /* AppDelegate.swift */; };
 		EE461EB21CD93E2100CE58C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE461EB11CD93E2100CE58C8 /* ViewController.swift */; };
 		EE461EB51CD93E2100CE58C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE461EB31CD93E2100CE58C8 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		520FE8E31D2ACF7700A8AE8E /* Admission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admission.swift; sourceTree = "<group>"; };
 		520FE8E51D2ADE4D00A8AE8E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		52C069AB1D2B0F060067585E /* EventCustomCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		52C069AD1D3043E30067585E /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		EE461EAC1CD93E2100CE58C8 /* Nightspots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightspots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE461EAF1CD93E2100CE58C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE461EB11CD93E2100CE58C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				EE461EAF1CD93E2100CE58C8 /* AppDelegate.swift */,
 				EE461EB11CD93E2100CE58C8 /* ViewController.swift */,
 				EE461EB31CD93E2100CE58C8 /* Main.storyboard */,
+				52C069AD1D3043E30067585E /* FilterViewController.swift */,
 				52C069AB1D2B0F060067585E /* EventCustomCellTableViewCell.swift */,
 				EE461EB61CD93E2100CE58C8 /* Assets.xcassets */,
 				EE461EB81CD93E2100CE58C8 /* LaunchScreen.storyboard */,
@@ -180,6 +183,7 @@
 				EE461EB21CD93E2100CE58C8 /* ViewController.swift in Sources */,
 				520FE8E21D2ACF1400A8AE8E /* Table.swift in Sources */,
 				520FE8DA1D2AC3A600A8AE8E /* Venue.swift in Sources */,
+				52C069AE1D3043E30067585E /* FilterViewController.swift in Sources */,
 				520FE8DC1D2ACB4900A8AE8E /* Budget.swift in Sources */,
 				520FE8D81D2AC2EB00A8AE8E /* UserPreference.swift in Sources */,
 				EE461EB01CD93E2100CE58C8 /* AppDelegate.swift in Sources */,
