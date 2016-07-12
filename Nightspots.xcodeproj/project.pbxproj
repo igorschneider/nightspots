@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520561A61D3598BF0019684E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520561A51D3598BF0019684E /* MapViewController.swift */; };
+		520561A81D359A9A0019684E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520561A71D359A990019684E /* MapKit.framework */; };
+		520561AA1D359CAF0019684E /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520561A91D359CAF0019684E /* LocationModel.swift */; };
 		520FE8D61D2AC2C200A8AE8E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FE8D51D2AC2C200A8AE8E /* User.swift */; };
 		520FE8D81D2AC2EB00A8AE8E /* UserPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FE8D71D2AC2EB00A8AE8E /* UserPreference.swift */; };
 		520FE8DA1D2AC3A600A8AE8E /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FE8D91D2AC3A600A8AE8E /* Venue.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		520561A51D3598BF0019684E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		520561A71D359A990019684E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		520561A91D359CAF0019684E /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		520FE8D51D2AC2C200A8AE8E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		520FE8D71D2AC2EB00A8AE8E /* UserPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreference.swift; sourceTree = "<group>"; };
 		520FE8D91D2AC3A600A8AE8E /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520561A81D359A9A0019684E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +76,7 @@
 				520FE8DF1D2ACE7300A8AE8E /* Service.swift */,
 				520FE8E11D2ACF1400A8AE8E /* Table.swift */,
 				520FE8E31D2ACF7700A8AE8E /* Admission.swift */,
+				520561A91D359CAF0019684E /* LocationModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -76,6 +84,7 @@
 		EE461EA31CD93E2100CE58C8 = {
 			isa = PBXGroup;
 			children = (
+				520561A71D359A990019684E /* MapKit.framework */,
 				EE461EAE1CD93E2100CE58C8 /* Nightspots */,
 				EE461EAD1CD93E2100CE58C8 /* Products */,
 			);
@@ -96,6 +105,7 @@
 				EE461EAF1CD93E2100CE58C8 /* AppDelegate.swift */,
 				EE461EB11CD93E2100CE58C8 /* ViewController.swift */,
 				EE461EB31CD93E2100CE58C8 /* Main.storyboard */,
+				520561A51D3598BF0019684E /* MapViewController.swift */,
 				52C069AD1D3043E30067585E /* FilterViewController.swift */,
 				52C069AB1D2B0F060067585E /* EventCustomCellTableViewCell.swift */,
 				EE461EB61CD93E2100CE58C8 /* Assets.xcassets */,
@@ -189,6 +199,8 @@
 				EE461EB01CD93E2100CE58C8 /* AppDelegate.swift in Sources */,
 				520FE8D61D2AC2C200A8AE8E /* User.swift in Sources */,
 				520FE8E41D2ACF7700A8AE8E /* Admission.swift in Sources */,
+				520561AA1D359CAF0019684E /* LocationModel.swift in Sources */,
+				520561A61D3598BF0019684E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,19 @@ private let reuseIdentifier = "Cell"
 class FilterViewController: UIViewController {
     
     
+    @IBOutlet weak var distanceSlider: UISlider!
 
+    @IBOutlet weak var distanceLabel: UILabel!
+    
+    
+    
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        
+        self.distanceLabel.text = Int(self.distanceSlider.value).description + " miles"
+        
+    }
+    
+    
+    
    
 }
