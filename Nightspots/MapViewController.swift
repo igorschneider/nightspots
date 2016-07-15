@@ -29,6 +29,9 @@ class MapViewController : UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        
+        
+        
         loadLocation()
         // Create coordinates from location lat/long
         var poiCoodinates: CLLocationCoordinate2D = CLLocationCoordinate2D()
@@ -36,7 +39,7 @@ class MapViewController : UIViewController {
         poiCoodinates.latitude = CDouble(self.selectedLocation!.latitude!)!
         poiCoodinates.longitude = CDouble(self.selectedLocation!.longitude!)!
         // Zoom to region
-        let viewRegion: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(poiCoodinates, 750, 750)
+        let viewRegion: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(poiCoodinates, 600, 600)
         self.mapView.setRegion(viewRegion, animated: true)
         // Plot pin
         let pin: MKPointAnnotation = MKPointAnnotation()
@@ -45,6 +48,9 @@ class MapViewController : UIViewController {
         
         //add title to the pin
         pin.title = selectedLocation!.name
+        
     }
     
+    
+   
 }
