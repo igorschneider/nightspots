@@ -19,8 +19,10 @@
 		520FE8E21D2ACF1400A8AE8E /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FE8E11D2ACF1400A8AE8E /* Table.swift */; };
 		520FE8E41D2ACF7700A8AE8E /* Admission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FE8E31D2ACF7700A8AE8E /* Admission.swift */; };
 		520FE8E61D2ADE4D00A8AE8E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FE8E51D2ADE4D00A8AE8E /* Event.swift */; };
+		523DAB101D3AAB360094E1B4 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523DAB0F1D3AAB360094E1B4 /* EventDetailViewController.swift */; };
 		52C069AC1D2B0F060067585E /* EventCustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C069AB1D2B0F060067585E /* EventCustomCellTableViewCell.swift */; };
 		52C069AE1D3043E30067585E /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C069AD1D3043E30067585E /* FilterViewController.swift */; };
+		E7051DAC097F3C6F5072185C /* Pods_Nightspots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181055B9ECF38F0117AD5668 /* Pods_Nightspots.framework */; };
 		EE461EB01CD93E2100CE58C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE461EAF1CD93E2100CE58C8 /* AppDelegate.swift */; };
 		EE461EB21CD93E2100CE58C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE461EB11CD93E2100CE58C8 /* ViewController.swift */; };
 		EE461EB51CD93E2100CE58C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE461EB31CD93E2100CE58C8 /* Main.storyboard */; };
@@ -29,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181055B9ECF38F0117AD5668 /* Pods_Nightspots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nightspots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		520561A51D3598BF0019684E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		520561A71D359A990019684E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		520561A91D359CAF0019684E /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
@@ -41,8 +44,11 @@
 		520FE8E11D2ACF1400A8AE8E /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		520FE8E31D2ACF7700A8AE8E /* Admission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admission.swift; sourceTree = "<group>"; };
 		520FE8E51D2ADE4D00A8AE8E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		523DAB0F1D3AAB360094E1B4 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDetailViewController.swift; path = ../EventDetailViewController.swift; sourceTree = "<group>"; };
 		52C069AB1D2B0F060067585E /* EventCustomCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCustomCellTableViewCell.swift; sourceTree = "<group>"; };
 		52C069AD1D3043E30067585E /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		DB72FD722B8D3F9B99B254C1 /* Pods-Nightspots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nightspots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nightspots/Pods-Nightspots.release.xcconfig"; sourceTree = "<group>"; };
+		E47CCE438B70A06A82B10470 /* Pods-Nightspots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nightspots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nightspots/Pods-Nightspots.debug.xcconfig"; sourceTree = "<group>"; };
 		EE461EAC1CD93E2100CE58C8 /* Nightspots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightspots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE461EAF1CD93E2100CE58C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE461EB11CD93E2100CE58C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,12 +64,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				520561A81D359A9A0019684E /* MapKit.framework in Frameworks */,
+				E7051DAC097F3C6F5072185C /* Pods_Nightspots.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		374A8D3758BA71301C11A999 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				181055B9ECF38F0117AD5668 /* Pods_Nightspots.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		520FE8D41D2AB48600A8AE8E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,12 +96,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		57A6AB80BF2A625A449C5724 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E47CCE438B70A06A82B10470 /* Pods-Nightspots.debug.xcconfig */,
+				DB72FD722B8D3F9B99B254C1 /* Pods-Nightspots.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE461EA31CD93E2100CE58C8 = {
 			isa = PBXGroup;
 			children = (
 				520561A71D359A990019684E /* MapKit.framework */,
 				EE461EAE1CD93E2100CE58C8 /* Nightspots */,
 				EE461EAD1CD93E2100CE58C8 /* Products */,
+				57A6AB80BF2A625A449C5724 /* Pods */,
+				374A8D3758BA71301C11A999 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +133,7 @@
 				EE461EB31CD93E2100CE58C8 /* Main.storyboard */,
 				520561A51D3598BF0019684E /* MapViewController.swift */,
 				52C069AD1D3043E30067585E /* FilterViewController.swift */,
+				523DAB0F1D3AAB360094E1B4 /* EventDetailViewController.swift */,
 				52C069AB1D2B0F060067585E /* EventCustomCellTableViewCell.swift */,
 				EE461EB61CD93E2100CE58C8 /* Assets.xcassets */,
 				EE461EB81CD93E2100CE58C8 /* LaunchScreen.storyboard */,
@@ -122,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE461EBE1CD93E2100CE58C8 /* Build configuration list for PBXNativeTarget "Nightspots" */;
 			buildPhases = (
+				88ADFAFE9B7CCB297F82E16C /* [CP] Check Pods Manifest.lock */,
 				EE461EA81CD93E2100CE58C8 /* Sources */,
 				EE461EA91CD93E2100CE58C8 /* Frameworks */,
 				EE461EAA1CD93E2100CE58C8 /* Resources */,
+				EF3EA053A138196645733A98 /* [CP] Embed Pods Frameworks */,
+				7B13B97BBAC48E7AE1FB7E78 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +211,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B13B97BBAC48E7AE1FB7E78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nightspots/Pods-Nightspots-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88ADFAFE9B7CCB297F82E16C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF3EA053A138196645733A98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nightspots/Pods-Nightspots-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE461EA81CD93E2100CE58C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -200,6 +278,7 @@
 				520FE8D61D2AC2C200A8AE8E /* User.swift in Sources */,
 				520FE8E41D2ACF7700A8AE8E /* Admission.swift in Sources */,
 				520561AA1D359CAF0019684E /* LocationModel.swift in Sources */,
+				523DAB101D3AAB360094E1B4 /* EventDetailViewController.swift in Sources */,
 				520561A61D3598BF0019684E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +392,7 @@
 		};
 		EE461EBF1CD93E2100CE58C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47CCE438B70A06A82B10470 /* Pods-Nightspots.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Nightspots/Info.plist;
@@ -324,6 +404,7 @@
 		};
 		EE461EC01CD93E2100CE58C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB72FD722B8D3F9B99B254C1 /* Pods-Nightspots.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Nightspots/Info.plist;

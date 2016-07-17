@@ -1,0 +1,6 @@
+framework module Pods_Nightspots {
+  umbrella header "Pods-Nightspots-umbrella.h"
+
+  export *
+  module * { export * }
+}

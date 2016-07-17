@@ -1,0 +1,12 @@
+PODS:
+  - TNImageSliderViewController (1.0.4)
+
+DEPENDENCIES:
+  - TNImageSliderViewController
+
+SPEC CHECKSUMS:
+  TNImageSliderViewController: 2517ca7b658e2cfd35f12e02c3cacac7056e0010
+
+PODFILE CHECKSUM: 25bb59914717ac23c7179929404ee027861976bb
+
+COCOAPODS: 1.0.1
