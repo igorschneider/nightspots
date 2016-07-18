@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z68-nu-2uu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tL5-4O-Pqw">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kdS-IB-OEx" id="s73-l2-Hzb">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -31,13 +31,14 @@
                             <outlet property="delegate" destination="efc-D2-aTy" id="dPT-QE-QYL"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="gEa-N1-l2s"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="5Rq-Bi-LR0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96Y-M9-fnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="462"/>
+            <point key="canvasLocation" x="-7.5" y="279"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Map-->
         <scene sceneID="TJo-do-LLT">
             <objects>
                 <viewController id="kOH-lk-WeJ" customClass="MapViewController" customModule="Nightspots" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,15 +78,36 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="dnL-0a-5No"/>
                     <connections>
                         <outlet property="mapView" destination="bwd-v8-IWr" id="sb8-rF-nQF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXO-xp-esf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1920" y="449.25"/>
+            <point key="canvasLocation" x="870" y="407.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="74s-fi-YUg">
+            <objects>
+                <tabBarController id="tL5-4O-Pqw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="B2E-NA-TLv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VG6-nD-j8c" kind="relationship" relationship="viewControllers" id="Q3y-BS-lwf"/>
+                        <segue destination="gUG-9Q-aIx" kind="relationship" relationship="viewControllers" id="6GF-ic-STd"/>
+                        <segue destination="z68-nu-2uu" kind="relationship" relationship="viewControllers" id="QdW-sb-2fa"/>
+                        <segue destination="kOH-lk-WeJ" kind="relationship" relationship="viewControllers" id="q28-Gr-sON"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9v-AB-GPF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1377" y="1451.25"/>
+        </scene>
+        <!--Events-->
         <scene sceneID="wZ9-CL-Z6y">
             <objects>
                 <viewController id="VG6-nD-j8c" customClass="ViewController" customModule="Nightspots" sceneMemberID="viewController">
@@ -111,7 +133,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="600" height="126"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uRI-LX-Yg0" id="LVI-iP-lyO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="218"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="218.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmP-1e-Arp">
@@ -254,6 +276,9 @@
                                         <include reference="roa-ZD-1M4"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="71" width="400" height="729"/>
+                                </variation>
                             </scrollView>
                             <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="prominent" text="Search" placeholder="Search bars, clubs" translatesAutoresizingMaskIntoConstraints="NO" id="Ewp-o3-09Y">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -330,6 +355,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Events" id="KwI-Xb-0jQ"/>
                     <connections>
                         <outlet property="eventsTableView" destination="r2s-Dg-8BD" id="maq-C2-oSn"/>
                         <outlet property="searchDisplayController" destination="0SV-aQ-RhV" id="bin-r7-vAZ"/>
@@ -346,9 +372,9 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1029" y="1194"/>
+            <point key="canvasLocation" x="-93" y="1245"/>
         </scene>
-        <!--Event Detail View Controller-->
+        <!--Detail-->
         <scene sceneID="7Ny-Bg-Mzg">
             <objects>
                 <viewController id="z68-nu-2uu" customClass="EventDetailViewController" customModule="Nightspots" sceneMemberID="viewController">
@@ -426,12 +452,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Detail" id="bMO-bj-h0p"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvO-e7-ujY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1062" y="1861.5"/>
         </scene>
-        <!--Filter View Controller-->
+        <!--Filters-->
         <scene sceneID="29H-G7-Fsy">
             <objects>
                 <viewController id="gUG-9Q-aIx" customClass="FilterViewController" customModule="Nightspots" customModuleProvider="target" sceneMemberID="viewController">
@@ -674,6 +701,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Filters" id="InB-9b-wUx"/>
                     <connections>
                         <outlet property="distanceLabel" destination="Bfk-aZ-g20" id="hOy-Kf-3YA"/>
                         <outlet property="distanceSlider" destination="feB-wO-SeH" id="Re3-w2-7ib"/>
@@ -681,7 +709,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkr-CV-MPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1738.5" y="1194"/>
+            <point key="canvasLocation" x="964.5" y="1116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nHB-Mo-v66">
