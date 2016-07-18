@@ -10,7 +10,7 @@ var slideViewController = TNImageSliderViewController()
 
  override func viewDidAppear(animated: Bool) {
     
-    slideViewController.images = [UIImage(named:"stereo")!,UIImage(named:"castle")!,UIImage(named:"yellow")!,UIImage(named:"aerobar")!,UIImage(named:"red")!]
+    slideViewController.images = [UIImage(named:"stereo")!,UIImage(named:"stereo1")!,UIImage(named:"stereo2")!,UIImage(named:"stereo4")!]
 
     
    }

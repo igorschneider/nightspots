@@ -53,19 +53,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="421" height="441"/>
                                 </variation>
                             </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle" translatesAutoresizingMaskIntoConstraints="NO" id="PtN-EC-h90">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="450" width="346" height="170"/>
+                                </variation>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="bwd-v8-IWr"/>
+                                <exclude reference="PtN-EC-h90"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="bwd-v8-IWr"/>
+                                <include reference="PtN-EC-h90"/>
                             </mask>
                         </variation>
                     </view>
@@ -1262,6 +1270,7 @@
     <resources>
         <image name="bg333333" width="480" height="480"/>
         <image name="btblue" width="600" height="306"/>
+        <image name="castle" width="650" height="292"/>
         <image name="locator2" width="2000" height="2000"/>
     </resources>
 </document>
