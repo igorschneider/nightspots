@@ -7,7 +7,7 @@ class LocationModel: NSObject {
     var address: String?
     var latitude: String?
     var longitude: String?
-    var name: String = "teste"
+
     
     
     //empty constructor
@@ -17,9 +17,9 @@ class LocationModel: NSObject {
         
     }
     
-    //construct with @name, @address, @latitude, and @longitude parameters
+    //construct with @address, @latitude, and @longitude parameters
     
-    init(name: String, address: String, latitude: String, longitude: String) {
+    init( address: String, latitude: String, longitude: String) {
         
         self.address = address
         self.latitude = latitude

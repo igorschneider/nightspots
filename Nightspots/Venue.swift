@@ -12,6 +12,7 @@ class Venue: NSObject {
     var distance: Double = 0.0
     var venueImages: Set<String>=[]
     var eventlist: Set<Event> = []
+    var location:LocationModel?
     
     
    
