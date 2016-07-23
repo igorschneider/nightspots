@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tL5-4O-Pqw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tL5-4O-Pqw">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kdS-IB-OEx" id="s73-l2-Hzb">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -133,7 +133,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="600" height="126"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uRI-LX-Yg0" id="LVI-iP-lyO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="218"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="218.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmP-1e-Arp">
@@ -355,7 +355,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Events" image="locator2" selectedImage="bg333333" id="KwI-Xb-0jQ"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="locator2" selectedImage="locator2" id="KwI-Xb-0jQ"/>
                     <connections>
                         <outlet property="eventsTableView" destination="r2s-Dg-8BD" id="maq-C2-oSn"/>
                         <outlet property="searchDisplayController" destination="0SV-aQ-RhV" id="bin-r7-vAZ"/>
@@ -701,7 +701,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Filters" image="locator2" selectedImage="aerobar" id="InB-9b-wUx"/>
+                    <tabBarItem key="tabBarItem" title="Filters" image="locator2" selectedImage="locator2" id="InB-9b-wUx"/>
                     <connections>
                         <outlet property="distanceLabel" destination="Bfk-aZ-g20" id="hOy-Kf-3YA"/>
                         <outlet property="distanceSlider" destination="feB-wO-SeH" id="Re3-w2-7ib"/>
@@ -1296,10 +1296,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="aerobar" width="430" height="150"/>
         <image name="bg333333" width="480" height="480"/>
         <image name="btblue" width="600" height="306"/>
         <image name="castle" width="650" height="292"/>
-        <image name="locator2" width="2000" height="2000"/>
+        <image name="locator2" width="25" height="25"/>
     </resources>
 </document>
