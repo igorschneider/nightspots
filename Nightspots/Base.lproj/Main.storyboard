@@ -355,7 +355,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Events" image="aerobar" selectedImage="bg333333" id="KwI-Xb-0jQ"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="locator2" selectedImage="bg333333" id="KwI-Xb-0jQ"/>
                     <connections>
                         <outlet property="eventsTableView" destination="r2s-Dg-8BD" id="maq-C2-oSn"/>
                         <outlet property="searchDisplayController" destination="0SV-aQ-RhV" id="bin-r7-vAZ"/>
@@ -452,7 +452,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Detail" image="bg333333" selectedImage="locator2" id="bMO-bj-h0p"/>
+                    <tabBarItem key="tabBarItem" title="Detail" image="locator2" selectedImage="locator2" id="bMO-bj-h0p"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvO-e7-ujY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -701,7 +701,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Filters" image="btblue" selectedImage="aerobar" id="InB-9b-wUx"/>
+                    <tabBarItem key="tabBarItem" title="Filters" image="locator2" selectedImage="aerobar" id="InB-9b-wUx"/>
                     <connections>
                         <outlet property="distanceLabel" destination="Bfk-aZ-g20" id="hOy-Kf-3YA"/>
                         <outlet property="distanceSlider" destination="feB-wO-SeH" id="Re3-w2-7ib"/>
