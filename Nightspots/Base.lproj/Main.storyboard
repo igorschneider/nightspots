@@ -97,20 +97,55 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="VG6-nD-j8c" kind="relationship" relationship="viewControllers" id="Q3y-BS-lwf"/>
-                        <segue destination="gUG-9Q-aIx" kind="relationship" relationship="viewControllers" id="6GF-ic-STd"/>
-                        <segue destination="z68-nu-2uu" kind="relationship" relationship="viewControllers" id="QdW-sb-2fa"/>
-                        <segue destination="kOH-lk-WeJ" kind="relationship" relationship="viewControllers" id="q28-Gr-sON"/>
+                        <segue destination="Z31-09-SeQ" kind="relationship" relationship="viewControllers" id="kjd-Oc-QHw"/>
+                        <segue destination="VG6-nD-j8c" kind="relationship" relationship="viewControllers" id="ZYV-Dm-nJl"/>
+                        <segue destination="Y6G-aD-0WP" kind="relationship" relationship="viewControllers" id="Yqw-aq-6rb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9v-AB-GPF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1377" y="1451.25"/>
         </scene>
-        <!--Events-->
+        <!--Settings-->
+        <scene sceneID="IuE-P7-L2F">
+            <objects>
+                <viewController id="Y6G-aD-0WP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f5z-WF-ssV"/>
+                        <viewControllerLayoutGuide type="bottom" id="o09-N0-o7P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fvn-gJ-han">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="NAS-x7-wB5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDM-3v-Zhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1377" y="2202.75"/>
+        </scene>
+        <!--My Spots-->
+        <scene sceneID="L3v-AY-smS">
+            <objects>
+                <viewController id="Z31-09-SeQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x0m-5L-7sE"/>
+                        <viewControllerLayoutGuide type="bottom" id="AUJ-e2-Gm9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nkq-Oy-Cfb">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Spots" image="mySpots" id="R6v-7F-c4Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iji-dV-P2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="1927.5"/>
+        </scene>
+        <!--Explore-->
         <scene sceneID="wZ9-CL-Z6y">
             <objects>
-                <viewController id="VG6-nD-j8c" customClass="ViewController" customModule="Nightspots" sceneMemberID="viewController">
+                <viewController id="VG6-nD-j8c" customClass="ViewController" customModule="Nightspots" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AY5-SO-fq1"/>
                         <viewControllerLayoutGuide type="bottom" id="1JD-al-2Kj"/>
@@ -355,7 +390,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Events" image="locator2" selectedImage="locator2" id="KwI-Xb-0jQ"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="explore" selectedImage="explore" id="KwI-Xb-0jQ"/>
                     <connections>
                         <outlet property="eventsTableView" destination="r2s-Dg-8BD" id="maq-C2-oSn"/>
                         <outlet property="searchDisplayController" destination="0SV-aQ-RhV" id="bin-r7-vAZ"/>
@@ -1299,6 +1334,9 @@
         <image name="bg333333" width="480" height="480"/>
         <image name="btblue" width="600" height="306"/>
         <image name="castle" width="650" height="292"/>
+        <image name="explore" width="25" height="25"/>
         <image name="locator2" width="25" height="25"/>
+        <image name="mySpots" width="25" height="25"/>
+        <image name="settings" width="25" height="25"/>
     </resources>
 </document>
